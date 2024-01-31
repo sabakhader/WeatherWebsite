@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './App.css';
-import Navbar from"../src/component/navbar";
+import Navbar from"../src/component/Navbar";
 
 
 function App()  {

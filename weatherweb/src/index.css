@@ -100,13 +100,13 @@ color:bisque;
 
 nav a{
   margin:0 2rem;
-  color:bisque;
+  color:rgb(199, 129, 44);
   text-decoration: none;
 
 }
 
 nav a:hover{
-  color:darkkhaki;
+  color:rgb(132, 128, 75);
 
 }
 
@@ -116,7 +116,7 @@ header .nav-btn{
   background: transparent;
   border: none;
   outline: none;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   visibility: hidden;
   opacity: 0;
   font-size:1.8rem;
