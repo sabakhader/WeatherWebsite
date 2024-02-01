@@ -27,7 +27,7 @@ const ProfilePage = ({ userId }) => {
         <>
           <h1>Welcome, {userData.username}!</h1>
           <WeatherWidget location={userData.location} />
-          {/* Add other user-related information or components here */}
+         
         </>
       ) : (
         <p>Loading user data...</p>

@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from"../src/component/Navbar";
+import Login from "./component/Login";
+import Profile from "./component/Profile";
+
+
+
 
 
 function App()  {
@@ -55,9 +61,14 @@ function App()  {
 
   return (
   <div className="app">
-    <React.Fragment>
-      <Navbar/>
-    </React.Fragment>
+    <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact component={App} />
+          <Route path="/Profile" component={Profile} />
+          <Route path="/Login" component={Login} />
+        </Routes>
+    </Router>
   
       <div className="search">
         <input

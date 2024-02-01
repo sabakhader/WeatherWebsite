@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import '../css/Login.css';
 import mail from '../background/mail.png';
 import padlock from '../background/padlock.png';
 import user from '../background/user.png';
@@ -10,6 +9,7 @@ const LoginSignup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+   const [user, setUser] = useState(null);
 
   const handleAuthentication = async () => {
     try {
